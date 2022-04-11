@@ -2,7 +2,9 @@ name: Publish
 
 on:
   repository_dispatch:
-
+  
+  watch:
+    types: [started]
 jobs:
   deploy:
     runs-on: ubuntu-latest
